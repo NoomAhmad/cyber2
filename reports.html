@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.0/css/all.css">
+
+    <title>Cyber Security Awarenses | Login</title>
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        .input{
+           border-radius: 5px;
+           color: #555;
+           text-align: left;
+           padding: 8px;
+        }
+        .input::placeholder{
+            color: #999;
+        }
+        h3{
+            padding: 8px 20px;
+            text-align: center;
+            margin: 0px;
+        }
+    </style>
+</head>
+
+<body onload="document.body.style.opacity='1' ">
+    <div class="cover">
+        <header class="header">
+            <a href="index.html" class="logo"><img src="img/logo.png"></a>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <ul class="menu">
+                <li class="menu-choice"><a href="courses.html">Courses</a></li>
+                <li class="menu-choice"><a href="notification.html">Notification</a></li>
+                <li class="menu-choice"><a href="reports.html">Reports</a></li>
+                <li class="menu-choice"><a href="passChecker.html">Password Checker</a></li>
+                <li class="menu-choice social-top"><a href="login.html" >Login</a></li>
+            </ul>
+        </header>
+    </div>
+    <div class="loginContainer">
+        <form  action="" >
+            <h3>write about what you report to is@ncse.gov.sa</h3>
+            <textarea name="reportTxt" placeholder="your report..." cols="20" rows="5" class="input"></textarea>
+            <input type="submit" name="send-btn" value="Report" class="button" >
+        </form>
+
+    </div>
+    
+</body>
+</html>

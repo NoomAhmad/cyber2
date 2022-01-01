@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.0/css/all.css">
+
+    <title>Cyber Security Awarenses | Notification</title>
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        .loginContainer{
+            height: 800px;
+        }
+        .loginContainer::before{
+            height: 800px;
+        }
+        .loginContainer h2 {
+            font-size: 20px;
+            padding: 20px 50px;
+        }
+        form{
+            padding-bottom: 60px;
+        }
+        h4{
+            color: #555;
+        }
+        @media(max-width:1200px){
+            .loginContainer h2 {
+               font-size: 20px;
+               padding: 20px 50px;
+            }
+        
+           h4{
+            padding: 0px 20px;
+            font-size: 16px;
+           }
+
+        }
+
+    </style>
+</head>
+
+<body onload="document.body.style.opacity='1' ">
+    <div class="cover">
+        <header class="header">
+            <a href="index.html" class="logo"><img src="img/logo.png"></a>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <ul class="menu">
+                <li class="menu-choice"><a href="courses.html">Courses</a></li>
+                <li class="menu-choice"><a href="notification.html">Notification</a></li>
+                <li class="menu-choice"><a href="reports.html">Reports</a></li>
+                <li class="menu-choice"><a href="passChecker.html">Password Checker</a></li>
+                <li class="menu-choice social-top"><a href="login.html" >Login</a></li>
+            </ul>
+        </header>
+    </div>
+
+    <div class="loginContainer">
+        <form method="POST" action="" id="alert">
+            <h2>Please choose what applies to you..</h2>
+            <h4>When was the last time you changed a password?</h4>
+            <select id="changePassword" onchange="passAlert(this)">
+                <option value="op0">choose..</option>
+                <option value="op1">I do not remember</option>
+                <option value="op2">6 months ago</option>
+                <option value="op3">less than 6 months</option>
+              </select>
+    
+              <h4>When was the last time you updated your device?</h4>
+              <select id="updatedDevice" onchange="deviceAlert(this)">
+                <option value="op0">choose..</option>
+                <option value="op4">I do not remember</option>
+                <option value="op5">6 months ago</option>
+                <option value="op6">less than 6 months</option>
+              </select>
+        
+              <h4>When was the last time you updated the apps?</h4>
+              <select id="updatedapp" onchange="appAlert(this)">
+                <option value="op0">choose..</option>
+                <option value="op7">I do not remember</option>
+                <option value="op8">6 months ago</option>
+                <option value="op9">less than 6 months</option>
+              </select>
+            <!--<input type="submit" name="send-btn" value="submit" class="button">-->
+        </form>
+
+    </div>
+
+    <script>
+        function passAlert(select){
+            if(select.value=="op1"){
+                alert("You must modify the password now 😨");
+            } 
+           
+            if(select.value=="op2"){
+                alert("It's been 6 month, should change your password as soon as possible 🙁");
+            } 
+
+            if(select.value=="op3"){
+                alert("It's ok, you don't need to change your password at this time 😎");
+            }
+        }
+
+        function deviceAlert(select){
+            if(select.value=="op4"){
+                alert("You have to modify the update now 😨");
+            } 
+           
+            if(select.value=="op5"){
+                alert("It's been 6 month and you should update as soon as possible 🙁");
+            } 
+
+            if(select.value=="op6"){
+                alert("It's ok, you don't need to update at this time 😎");
+            }
+        }
+
+        function appAlert(select){
+            if(select.value=="op7"){
+                alert("You have to modify the update now 😨");
+            } 
+           
+            if(select.value=="op8"){
+                alert("It's been 6 month and you should update as soon as possible 🙁");
+            } 
+
+            if(select.value=="op9"){
+                alert("It's ok, you don't need to update at this time 😎");
+            }
+        }
+    </script>
+    
+</body>
+</html>

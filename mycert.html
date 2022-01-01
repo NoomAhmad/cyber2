@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.0/css/all.css">
+
+    <title>Cyber Security Awarenses | My Certificates</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/courses.css">
+    <style>
+        .courseContainer{
+            height: 700px;
+        }
+
+        .courseContainer::before{
+            height:700px;
+        }
+
+        .cer{
+            align-items: center;
+            justify-content: center;
+        }
+
+        img{
+            height: 42%;
+            width: 40%;
+        }
+
+        @media(max-width:1200px){
+
+            img{
+                height: 55%;
+                width: 58%;
+            }
+
+        }
+    </style>
+</head>
+
+<body onload="document.body.style.opacity='1' ">
+    <div class="cover">
+        <header class="header">
+            <a href="index.html" class="logo"><img src="img/logo.png"></a>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <ul class="menu">
+              <li class="menu-choice"><a href="profile.html">My Courses</a></li>
+              <li class="menu-choice"><a href="myquizes.html">My Quizes</a></li>
+              <li class="menu-choice"><a href="mycert.html">My Certificates</a></li>
+              <li class="menu-choice social-top"><a href="index.html" >Logout</a></li>
+            </ul>
+        </header>
+    </div>
+
+    <div class="courseContainer cer">
+        <h4>1/1</h4>
+      <img src="img/cer.jpg">
+      <a href="#" class="button">download</a>
+    </div>
+    
+</body>
+</html>

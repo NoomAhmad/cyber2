@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.0/css/all.css">
+
+    <title>Cyber Security Awarenses | Notification</title>
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        .loginContainer{
+            height: 600px;
+        }
+        .loginContainer::before{
+            height: 600px;
+        }
+        .loginContainer h2 {
+            font-size: 20px;
+            padding: 20px 40px;
+        }
+        
+        .input{
+            display: none;
+        }
+
+        @media(max-width:1200px){
+
+            .loginContainer h2 {
+               font-size: 18px;
+               padding: 12px 40px;
+            }
+
+        }
+
+
+    </style>
+</head>
+
+<body onload="document.body.style.opacity='1' ">
+    <div class="cover">
+        <header class="header">
+            <a href="index.html" class="logo"><img src="img/logo.png"></a>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <ul class="menu">
+                <li class="menu-choice"><a href="courses.html">Courses</a></li>
+                <li class="menu-choice"><a href="notification.html">Notification</a></li>
+                <li class="menu-choice"><a href="reports.html">Reports</a></li>
+                <li class="menu-choice"><a href="passChecker.html">Password Checker</a></li>
+                <li class="menu-choice social-top"><a href="login.html" >Login</a></li>
+            </ul>
+        </header>
+    </div>
+
+    <div class="loginContainer">
+        <form action="subnotification.html">
+            <h2>Choose the way that you want to get notifications..</h2>
+            <select id="way" onchange="showDiv(this)">
+                <option value="choose">choose</option>
+                <option value="email">email</option>
+                <option value="SMS">SMS</option>
+              </select>
+            <input type="email" name="email" id="email" placeholder="Your email" class="input">
+            <input type="tel" name="phoneNo" id="phoneNo" placeholder="Your phone number" class="input">
+            <input type="submit" name="send-btn" value="send" class="button" onclick="window.location.href='subnotification.html' ">
+        </form>
+       
+    </div>
+
+    <script>
+        function showDiv(select){
+            if(select.value=="email"){
+                document.getElementById('email').style.display = "block";
+            } 
+            else{
+                document.getElementById('email').style.display = "none";
+            }
+
+            if(select.value=="SMS"){
+                document.getElementById('phoneNo').style.display = "block";
+            } 
+            else{
+                document.getElementById('phoneNo').style.display = "none";
+            }
+        }
+    </script>
+    
+</body>
+</html>

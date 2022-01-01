@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.0/css/all.css">
+
+
+    <title>Cyber Security Awarenses | profile</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/courses.css">
+    <style>
+        .courseContainer{
+            height: 700px;
+        }
+
+        .courseContainer::before{
+            height:700px;
+        }
+
+        @media(max-width:1200px){
+            .courseContainer{
+               height: 1200px;
+            }
+
+           .courseContainer::before{
+               height:1200px;
+            }
+        }
+    </style>
+</head>
+
+<body onload="document.body.style.opacity='1' ">
+    <div class="cover">
+        <header class="header">
+            <a href="index.html" class="logo"><img src="img/logo.png"></a>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <ul class="menu">
+              <li class="menu-choice"><a href="profile.html">My Courses</a></li>
+              <li class="menu-choice"><a href="myquizes.html">My Quizes</a></li>
+              <li class="menu-choice"><a href="mycert.html">My Certificates</a></li>
+              <li class="menu-choice social-top"><a href="index.html" >Logout</a></li>
+            </ul>
+        </header>
+    </div>
+
+    <div class="courseContainer" style="height: 700px;">
+
+        <h2>My Courses</h2>
+        <div class="cardContainer">
+            <div class="card">
+                <div class="cardTitle">
+                    <h3>Cyber Security Awareness</h3>
+                    <p class="hours">13 hours</p>
+                    <div class="progress">
+                        <div class="line line1">72%</div>
+                    </div>
+                </div>
+           </div>
+    
+            <div class="card">
+                <div class="cardTitle">
+                    <h3>Network Security For Bignners</h3>
+                    <p class="hours">6 hours</p>
+                    <div class="progress">
+                        <div class="line line2">38%</div>
+                    </div>
+                </div>
+            </div>
+                
+            <div class="card">
+                <div class="cardTitle">
+                    <h3>Socail Engineering</h3>
+                    <p class="hours">16 hours</p>
+                    <div class="progress">
+                        <div class="line line3">100%</div>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+    
+</body>
+</html>
