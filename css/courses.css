@@ -31,7 +31,7 @@
     font-size: 26px;
     text-align: left;
     padding-top: 60px;
-    padding-left:100px ;
+    padding-left:70px ;
 }
 .cardContainer{
    display: flex;
@@ -156,6 +156,7 @@
     .courseContainer h2 {
         font-size: 22px;
         padding-top: 60px;
+        padding-left:30px ;
     }
     .cardContainer{
        display: flex;
@@ -202,6 +203,8 @@
     
     .line {
         height: 18px;
+        padding: 2px 16px;
+        font-size: 16px
     }
     
 
