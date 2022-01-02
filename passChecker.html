@@ -11,10 +11,14 @@
     <title>Cyber Security Awarenses | Password Checker</title>
     <link rel="stylesheet" href="css/main.css">
     <style>
-        span{
+        .iconInput{
             display: flex;
             flex-direction: row;
-            width:70%;
+            align-items: flex-end;
+            justify-content: right;
+            width: 80%;
+            padding: 0;
+            margin: 0;
         }
         .input{
            border-radius: 5px;
@@ -23,6 +27,7 @@
            padding: 8px;
            font-size: 18px;
            width: 100%;
+           position: relative;
         }
         .input::placeholder{
             color: #999;
@@ -32,10 +37,12 @@
             text-align: center;
             margin: 0px;
         }
-        form i {
-          padding:8px;
-          padding-top: 24px;
+        #togglePassword {
+          padding-bottom: 12px;
           width: 20px;
+          position: absolute;
+          padding-right: 30px;
+          
         }
         .error{
             color: indianred;
@@ -44,6 +51,7 @@
             text-align:center;
         }
       
+        
     </style>
 </head>
 
@@ -65,10 +73,10 @@
     <div class="loginContainer">
         <form action=" " onsubmit="return false" >
             <h3>Enter your password to check...</h3>
-           <span >
+           <span class="iconInput">
             <input type="password" name="password" id="password" placeholder="password" class="input"  required>
             <i class="bi bi-eye-slash" id="togglePassword"></i>
-            </span>
+           </span>
 
             <p id="error" class="error"></p>
             <input type="submit" name="send-btn" value="check" class="button" onclick="check()" >

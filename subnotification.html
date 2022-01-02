@@ -26,6 +26,9 @@
         h4{
             color: #555;
         }
+        .input{
+            font-size: 18px;
+        }
         @media(max-width:1200px){
             .loginContainer h2 {
                font-size: 20px;
@@ -36,6 +39,7 @@
             padding: 0px 20px;
             font-size: 16px;
            }
+           
 
         }
 
@@ -59,7 +63,7 @@
     </div>
 
     <div class="loginContainer">
-        <form method="POST" action="" id="alert">
+        <form action="msg.html" id="alert">
             <h2>Please choose what applies to you..</h2>
             <h4>When was the last time you changed a password?</h4>
             <select id="changePassword" onchange="passAlert(this)">
@@ -84,7 +88,7 @@
                 <option value="op8">6 months ago</option>
                 <option value="op9">less than 6 months</option>
               </select>
-            <!--<input type="submit" name="send-btn" value="submit" class="button">-->
+            <input type="submit" name="send-btn" value="done" class="button">
         </form>
 
     </div>

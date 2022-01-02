@@ -11,12 +11,14 @@ function check(){
 
     if((letters == true) && (numbers == true) && (special == true) && (min == true)){
         input.style.background = "#A0DB8E";
+        msg.style.color = "green";
         msg.textContent = "✔️ Great! Your password is strong and it is hack-resistant..";
                 
     }
 
     else if((letters == true) && (numbers == true) && (special == false) && (min == true)){
         input.style.background = "#ffe599";
+         msg.style.color = "orange";
         msg.textContent = "⚠️ Nice! Your password is good but it is probably crackable..";
                 
     }
